@@ -42,7 +42,7 @@ with onglet1:
     st.write(f"Trajectoire de **{nom_astre}** autour du Soleil.")
     
     # Génération des points de l'ellipse
-    theta = np.linspace(0, 2*np.PI, 500)
+    theta = np.linspace(0, 2*np.pi, 500)
     # Équation paramétrique par rapport au centre de l'ellipse : x = a*cos(t), y = b*sin(t)
     # Le Soleil étant au foyer (x = +c ou -c), on décale pour placer le Soleil à l'origine (0,0)
     x_ellipse = a * np.cos(theta) - c
